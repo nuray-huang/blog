@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    height: 60px;
+}
+
+.header .left h3 {
+    float: right;
+    font-weight: 800;
+}
+
+.header .right {
+    float: right;
+}
+
+.header .right button {
+    height: 60px;
+    width: 100px;
+    background-color: #fff;
+}
+
+.article {
+    margin-top: 50px;
+}
+
+.article .title {
+    margin-top: 30px;
+    margin-bottom: 65px;
+}
+
+.article .title h4 {
+    display: block;
+    width: 100px;
+    height: 30px;
+    float: left;
+    font-weight: 600;
+}
+
+.article .title span {
+    display: block;
+    width: 100px;
+    margin: 0;
+    padding: 0;
+}
+
+.article .right button {
+    width: 100%;
+    margin-top: 10px;
+    border: none;
+}
+
+.article .right button span {
+    margin-left: 5px;
+}
+
+.article form {
+    margin-top: 100px;
+}
+
+.article form .form-control {
+    margin-bottom: 10px;
+}
+
+.article .tips {
+    display: block;
+    background-color: palevioletred;
+    margin-top: 10px;
+}
+
+.login {
+    height: 300px;
+    width: 400px;
+    margin: 10px auto;
+}
+
+.login h4 {
+    font-weight: 600;
+    text-align: center;
+    margin: 10px 0;
+}

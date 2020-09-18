@@ -1,0 +1,7 @@
+    <div class="col-md-2 right" style="padding: 0;margin: 0;">
+                <div class="btn-group">
+                    <a href="user.html"><button type="button" class="btn btn-default glyphicon glyphicon-user"><span>用户管理</span></button></a>
+                    <a href="article.html"><button type="button" class="btn btn-default glyphicon glyphicon-list-alt"><span>文章管理</span></button></a>
+
+                </div>
+            </div>

@@ -1,0 +1,74 @@
+
+   {{extend './common/layout.art'}}
+   {{block 'link'}}
+       <link rel="stylesheet" href="/admin/lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/admin/css/base.css">
+   {{/block}}
+   {{block 'script'}}
+       <script src="/admin/lib/jquery/dist/jquery.min.js"></script>
+    <script src="/admin/lib/bootstrap/js/bootstrap.min.js"></script>
+   {{/block}}
+   {{block 'main'}}
+    <div class="container-fluid">
+      {{include './common/header.art'}}
+
+        <div class="row article">
+              {{include './common/aside.art'}}
+
+            <div class="col-md-9">
+                <div class="title">
+                    <h4>用户</h4>
+                    <span>找到1篇文章</span>
+                </div>
+                <div class="table">
+                    <table class="table">
+
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>用户名</th>
+                                <th>邮箱</th>
+                                <th>角色</th>
+                                <th>状态</th>
+                                <th>操作</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        {{each users}}
+                            <tr>
+                                <td>{{@$value._id}}</td>
+                                <td>{{@$value.username}}</td>
+                                <td>{{@$value.email}}</td>
+                                <td>{{@$value.role=='admin'?'超级管理员':'普通用户'}}</td>
+                                <td>{{@$value.state==0?'启用':'禁用'}}</td>
+                                <td>
+                                    <a href="user-edit.html" class="glyphicon glyphicon-edit"></a>
+                                    <i class="glyphicon glyphicon-remove" data-toggle="modal" data-target=".confirm-modal"></i>
+                                </td>
+                            </tr>
+                           {{/each}}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="col-md-1">
+                <a href="/admin/user-edit" class="btn btn-primary new">新增用户</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                <ul class="pagination">
+                    <li><a href="#">&laquo;</a></li>
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><a href="#">&raquo;</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+    </div>
+{{/block}}

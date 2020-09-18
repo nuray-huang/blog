@@ -1,0 +1,91 @@
+
+   {{extend './common/layout.art'}}
+   {{block 'link'}}
+       <link rel="stylesheet" href="/admin/lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/admin/css/base.css">
+   {{/block}}
+   {{block 'script'}}
+       <script src="/admin/lib/jquery/dist/jquery.min.js"></script>
+    <script src="/admin/lib/bootstrap/js/bootstrap.min.js"></script>
+   {{/block}}
+   {{block 'main'}}
+    <div class="container-fluid">
+          {{include './common/header.art'}}
+
+        <div class="row article">
+          {{include './common/aside.art'}}
+
+            <div class="col-md-9">
+                <div class="title">
+                    <h4>文章</h4>
+                    <span>找到1篇文章</span>
+                </div>
+                <div class="table">
+                    <table class="table">
+
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>标题</th>
+                                <th>发布时间</th>
+                                <th>作者</th>
+                                <th>操作</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>5b9a716cb2d2bf17706bcc0a</td>
+                                <td>JavaScript基础一：基本介绍</td>
+                                <td>2020-12-23</td>
+                                <td>hxy</td>
+                                <td>
+                                    <a href="article-edit.html" class="glyphicon glyphicon-edit"></a>
+                                    <i class="glyphicon glyphicon-remove" data-toggle="modal" data-target=".confirm-modal"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>5b9a716cb2d2bf17706bcc0a</td>
+                                <td>JavaScript基础一：基本介绍</td>
+                                <td>2020-12-23</td>
+                                <td>hxy</td>
+                                <td>
+                                    <a href="article-edit.html" class="glyphicon glyphicon-edit"></a>
+                                    <i class="glyphicon glyphicon-remove" data-toggle="modal" data-target=".confirm-modal"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>5b9a716cb2d2bf17706bcc0a</td>
+                                <td>JavaScript基础一：基本介绍</td>
+                                <td>2020-12-23</td>
+                                <td>hxy</td>
+                                <td>
+                                    <a href="article-edit.html" class="glyphicon glyphicon-edit"></a>
+                                    <i class="glyphicon glyphicon-remove" data-toggle="modal" data-target=".confirm-modal"></i>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="col-md-1">
+                <a href="article-edit.html" class="btn btn-primary new">发布新文章</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                <ul class="pagination">
+                    <li><a href="#">&laquo;</a></li>
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><a href="#">&raquo;</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+    </div>
+    {{/block}}
+
